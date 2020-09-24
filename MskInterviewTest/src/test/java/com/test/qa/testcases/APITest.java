@@ -32,7 +32,6 @@ public class APITest extends TestBase {
 		Assert.assertEquals(statuscode, 200);
 		ValidatableResponse validateResponse = response.then();
 		validateResponse.body("last_update", Matchers.equalTo("Landed on OCISLY as of Jan 7, 2020. "));
-
 	}
 
 	@Test(priority = 2)
@@ -49,7 +48,6 @@ public class APITest extends TestBase {
 		String responseBody = response.getBody().asString();
 		int statuscode = response.getStatusCode();
 		Assert.assertEquals(statuscode, 200);
-
 		ValidatableResponse validateResponse = response.then();
 		validateResponse.body("id", Matchers.equalTo("123456"));
 	}
@@ -68,7 +66,6 @@ public class APITest extends TestBase {
 		String responseBody = response.getBody().asString();
 		int statuscode = response.getStatusCode();
 		Assert.assertEquals(statuscode, 200);
-
 		ValidatableResponse validateResponse = response.then();
 		validateResponse.assertThat().body("id", Matchers.equalTo("435"));
 		validateResponse.body("id", Matchers.equalTo("123456"));

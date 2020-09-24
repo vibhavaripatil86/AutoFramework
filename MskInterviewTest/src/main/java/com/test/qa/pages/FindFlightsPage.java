@@ -29,12 +29,11 @@ public class FindFlightsPage extends TestBase {
 	}
 
 	// Actions:
-
 	public ChooseFilghtPage findflight() {
 		Select select1 = new Select(deptCity);
 		Select select2 = new Select(destCity);
-			List<WebElement> options = select2.getOptions();
-			
+		List<WebElement> options = select2.getOptions();
+
 		select2.selectByValue("Boston");
 		select1.selectByIndex(2);
 		findFlight.click();

@@ -22,5 +22,4 @@ public class ChooseFilghtPage extends TestBase {
 
 		return new PurchaseFlightPage();
 	}
-
 }

@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Smoke Test Automation Test Suite">
-<test name="Msk Test Cases">
-<parameter name="fname", value ="vibhavari"/>
-<parameter name="addr", value ="Viman Nagar"/>
-<parameter name="cty", value ="Pune"/>
-<parameter name="st", value ="Maharashtra"/>
-<parameter name="zcode", value ="411014"/>
-<parameter name="ccnumber", value ="1234567812345678"/>
-<parameter name="mn", value ="09"/>
-<parameter name="yrs", value ="2020"/>
-<parameter name="nocard", value ="VIBHAVARI PATIL"/>
-	<classes>
+	<test name="Msk Test Cases">
+		<parameter name="fname" , value="vibhavari" />
+		<parameter name="addr" , value="Viman Nagar" />
+		<parameter name="cty" , value="Pune" />
+		<parameter name="st" , value="Maharashtra" />
+		<parameter name="zcode" , value="411014" />
+		<parameter name="ccnumber" , value="1234567812345678" />
+		<parameter name="mn" , value="09" />
+		<parameter name="yrs" , value="2020" />
+		<parameter name="nocard" , value="VIBHAVARI PATIL" />
+		<classes>
 			<class name="com.test.qa.testcases.APITest"></class>
 			<class name="com.test.qa.testcases.PurchaseFlightPageTest"></class>
-	
-
 		</classes>
 	</test>
 </suite>

@@ -32,14 +32,6 @@ public class PurchaseFlightPageTest extends TestBase {
 		testUtil = new TestUtil();
 		chooseFlightPage = findFlightPage.findflight();
 		purchaseFlightPage = chooseFlightPage.clickOnChooseFlight();
-
-	}
-
-	@Parameters({ "url", "uname", "pwd" })
-
-	@Test()
-	public void testLogin(String url, String uname, String pwd) {
-
 	}
 
 	@Test(priority = 1)
